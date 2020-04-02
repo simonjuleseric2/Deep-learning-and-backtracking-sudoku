@@ -64,3 +64,6 @@ Evaluation on validation set composed of "real life" sudoku images:
 ## Solving the grid with backstrapping
 
 see [this notebook](solve_grid.ipynb) for details.
+
+![](plots/final_display.png)
+
