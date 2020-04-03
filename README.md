@@ -1,4 +1,4 @@
-# Solving a sudoku with backstrapping and deep learning
+# Solving a sudoku with backtracking and deep learning
 
 ## Table of contents:
 
@@ -34,7 +34,7 @@ Extraction of digit area:
 
 ## Data Generation
 
-*(details and code for this section can be found in the notebook: 'digit_generation&training.ipynb')*
+*(details and code for this section can be found in *[this notebook](digit_generation&training.ipynb)*
 
 First, generate random digit image with random field around the digit area:
 
@@ -61,7 +61,7 @@ Evaluation on validation set composed of "real life" sudoku images:
 
 ![](plots/conf_matrix.png)
 
-## Solving the grid with backstrapping
+## Solving the grid with backtracking
 
 see [this notebook](solve_grid.ipynb) for details.
 
