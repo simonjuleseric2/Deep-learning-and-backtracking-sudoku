@@ -18,7 +18,7 @@
 
 ## Grid detection:
 
-*(details and code for this section can be found in the notebook: grid_detection.ipynb)*
+(details and code for this section can be found in [this notebook](grid_detection.ipynb))
 
 First, some preprocessing:
 
@@ -34,7 +34,7 @@ Extraction of digit area:
 
 ## Data Generation
 
-*(details and code for this section can be found in *[this notebook](digit_generation&training.ipynb)*
+*(details and code for this section can be found in [this notebook](digit_generation&training.ipynb))
 
 First, generate random digit image with random field around the digit area:
 
