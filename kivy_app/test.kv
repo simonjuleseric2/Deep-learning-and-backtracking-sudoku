@@ -1,0 +1,98 @@
+
+
+
+<CameraClick>:
+	id: camera
+    orientation: 'vertical'
+    Camera:
+        id: rec
+        resolution: (1024, 1024)
+        play: True
+    Button:
+        text: 'Capture'
+        size_hint_y: None
+        height: '48dp'
+        on_press: root.capture()
+
+<MenuScreen>:
+    FloatLayout:
+        Button:
+            text: 'Load image'
+            size_hint: (.2, .1)
+            pos_hint: {'x': .4, 'y': .05}
+            on_press: root.manager.current='select'
+
+
+
+
+
+<SettingsScreen>:
+    FloatLayout:
+		id: settings
+		Image:
+		    id: grid
+		    source: root.img
+		    pos: 100, 55
+			
+        Button:
+            text: 'Crop'
+            size_hint: (.2, .1)
+            pos_hint: {'x': .2, 'y': .05}
+			on_press: root.crop_grid_img()
+			
+        Button:
+            text: 'Try again'
+            size_hint: (.2, .1)
+            pos_hint: {'x': .6, 'y': .05}
+			on_press: root.go_back()
+
+
+			
+<CropScreen>:
+    FloatLayout:
+		Image:
+		    id: croped_img
+		    source: root.img
+		    pos: 100, 55
+			size: 500, 500
+			
+        Button:
+            text: 'Try again'
+            size_hint: (.3, .1)
+            pos_hint: {'x': .6, 'y': .05}
+			on_press: root.go_back()
+			
+        Button:
+            text: 'Solve'
+            size_hint: (.3, .1)
+            pos_hint: {'x': .2, 'y': .05}
+			on_press: root.go_to_solve()
+		
+			
+			
+<SolvedScreen>:
+    FloatLayout:
+		Image:
+		    id: solved_img
+		    source: root.img
+		    pos: 100, 55
+			size: 500, 500
+			
+        Button:
+            text: 'Try again'
+            size_hint: (.3, .1)
+            pos_hint: {'x': .4, 'y': .05}
+			on_press: root.select_new()
+			
+			
+<NoSolScreen>:
+    FloatLayout:
+		Label:
+			id: label_widget
+		    text: 'No Solution Found'
+			
+        Button:
+            text: 'Try again'
+            size_hint: (.3, .1)
+            pos_hint: {'x': .4, 'y': .05}
+			on_press: root.select_new()
