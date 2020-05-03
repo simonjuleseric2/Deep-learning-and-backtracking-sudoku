@@ -72,7 +72,8 @@ see [this notebook](solve_grid.ipynb) for details.
 
 ## Putting everything in a desktop app.
 
-For this secton we will use ![Kivy](https://kivy.org/#home), an opensource python library for application developpement on multiple OS.
+For this secton we will use Kivy, an opensource python library for application developpement on multiple OS.$
+The code is available in the kivy_app folder.
 
 
 
