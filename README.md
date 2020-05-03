@@ -1,11 +1,14 @@
 # Solving a sudoku with backtracking and deep learning
 
+![](app.gif)
+
 ## Table of contents:
 
 * Grid Detection
 * Data generation
 * CNN training
 * Solving the grid with backstrapping
+* App creation
 
 
 ## Dependencies 
@@ -66,4 +69,11 @@ Evaluation on validation set composed of "real life" sudoku images:
 see [this notebook](solve_grid.ipynb) for details.
 
 ![](plots/final_display.png)
+
+## Putting everything in a desktop app.
+
+For this secton we will use ![Kivy](https://kivy.org/#home), an opensource python library for application developpement on multiple OS.
+
+
+
 
