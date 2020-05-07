@@ -57,7 +57,7 @@ Some exemples of Generated images:
 
 *(details and code in the notebook: 'digit_generation&training.ipynb')*
 
-![](plots/training_stats.png)
+![](plots/training_stats2.png)
 
 Evaluation on validation set composed of "real life" sudoku images:
 33 grids, 2673 images (sudoku cells) for a total accuracy of 99.7%.
