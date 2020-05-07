@@ -2,7 +2,6 @@
 import numpy as np
 import operator
 import numpy as np
-from grid_detection import *
 import keras
 from keras.models import load_model
 from PIL import Image, ImageFont, ImageDraw
@@ -14,7 +13,7 @@ import cv2
 #%matplotlib inline
 
 
-#reagange list in list of list for each row:
+#reagange list in list of list for  each row:
 def rearange_list(nlist):
     dlist=[]
     for i in range(0, 9):
@@ -150,8 +149,8 @@ def get_reconstructed_grid(matrix_grid):
   
     
     
-def crop_grid(image_path):
-    sudoku_img = cv2.imread(image_path)
+def crop_grid(sudoku_img):
+    #sudoku_img = cv2.imread(image_path)
     gray = cv2.cvtColor(sudoku_img, cv2.COLOR_BGR2GRAY)
     blur = cv2.GaussianBlur(gray, (5,5), 0)
     thresh = cv2.adaptiveThreshold(blur, 255, 1, 1, 11, 2)
@@ -248,8 +247,8 @@ def draw_lines2(img, side):
     
     
     
-def get_solved_grid_img2(grid_img_path):
-    sudoku_img = cv2.imread(grid_img_path)
+def get_solved_grid_img2(sudoku_img):
+    #sudoku_img = cv2.imread(grid_img_path)
     gray = cv2.cvtColor(sudoku_img, cv2.COLOR_BGR2GRAY)
     cells_coor=extract_cells_coordinates(gray)
     total_dig=np.zeros((81, 45, 45, 1), dtype=float)#raw images

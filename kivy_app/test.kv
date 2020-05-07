@@ -2,26 +2,16 @@
 
 
 <CameraClick>:
-	id: camera
-    orientation: 'vertical'
-    Camera:
-        id: rec
-        resolution: (1024, 1024)
-        play: True
+	
+    KivyCamera:
+        id: qrcam
+		
+	
     Button:
         text: 'Capture'
-        size_hint_y: None
-        height: '48dp'
+        size_hint: (.3, .1)
+        pos_hint: {'x': .4, 'y': .05}
         on_press: root.capture()
-
-<MenuScreen>:
-    FloatLayout:
-        Button:
-            text: 'Load image'
-            size_hint: (.2, .1)
-            pos_hint: {'x': .4, 'y': .05}
-            on_press: root.manager.current='select'
-
 
 
 
@@ -29,10 +19,8 @@
 <SettingsScreen>:
     FloatLayout:
 		id: settings
-		Image:
+		ImgDisplay:
 		    id: grid
-		    source: root.img
-		    pos: 100, 55
 			
         Button:
             text: 'Crop'
@@ -50,10 +38,8 @@
 			
 <CropScreen>:
     FloatLayout:
-		Image:
-		    id: croped_img
-		    source: root.img
-		    pos: 100, 55
+		ImgDisplay:
+		    id: crop
 			size: 500, 500
 			
         Button:
@@ -67,22 +53,18 @@
             size_hint: (.3, .1)
             pos_hint: {'x': .2, 'y': .05}
 			on_press: root.go_to_solve()
-		
-			
+	
 			
 <SolvedScreen>:
-    FloatLayout:
-		Image:
-		    id: solved_img
-		    source: root.img
-		    pos: 100, 55
-			size: 500, 500
-			
-        Button:
-            text: 'Try again'
-            size_hint: (.3, .1)
-            pos_hint: {'x': .4, 'y': .05}
-			on_press: root.select_new()
+	ImgDisplay:
+	    id: solved
+		size: 500, 500
+		
+	Button:
+		text: 'Try again'
+		size_hint: (.4, .1)
+		pos_hint: {'x': .3, 'y': .05}
+		on_press: root.select_new()
 			
 			
 <NoSolScreen>:
