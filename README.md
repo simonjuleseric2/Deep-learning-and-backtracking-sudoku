@@ -37,7 +37,7 @@ Extraction of digit area:
 
 ## Data Generation
 
-*(details and code for this section can be found in [this notebook](digit_generation&training.ipynb))
+* (details and code for this section can be found in [this notebook](digit_generation&training.ipynb)) *
 
 First, generate random digit image with random field around the digit area:
 
@@ -55,7 +55,7 @@ Some exemples of Generated images:
 
 ## Train the model with Keras (Tensorflow backend):
 
-*(details and code [this notebook](digit_generation&training.ipynb))
+*(details and code [this notebook](digit_generation&training.ipynb)) *
 
 ![](plots/training_stats2.png)
 
