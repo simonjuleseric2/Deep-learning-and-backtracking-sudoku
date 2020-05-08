@@ -70,7 +70,7 @@ see [this notebook](solve_grid.ipynb) for details.
 
 ![](plots/final_display.png)
 
-## Putting everything in a desktop app.
+## Wrapping everything in a desktop app.
 
 For this secton we will use Kivy, an opensource python library for application developpement on multiple OS.
 The code is available in the kivy_app folder.
