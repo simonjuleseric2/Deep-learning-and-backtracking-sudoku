@@ -60,7 +60,7 @@ Some exemples of Generated images:
 ![](plots/training_stats2.png)
 
 Evaluation on validation set composed of "real life" sudoku images:
-33 grids, 2673 images (sudoku cells) for a total accuracy of 99.7%.
+43 grids, 3483 images (sudoku cells) for a total accuracy of 99.7%.
 
 ![](plots/conf_matrix3.png)
 
