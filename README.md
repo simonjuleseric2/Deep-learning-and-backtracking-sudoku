@@ -13,10 +13,10 @@
 
 ## Dependencies 
 
-* opencv-Python
-* Numpy
+* opencv == 4.2.0
+* Tensorflow == 2.2.0
+* Numpy == 1.18.5
 * Pillow
-* Keras
 * Scipy
 
 ## Grid detection:
